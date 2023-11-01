@@ -1,0 +1,55 @@
+body{
+    background-color:gainsboro
+}
+
+header,
+main,
+aside,
+footer,
+section,
+article {
+  border: 1px solid black;
+  padding: 2px;
+  margin: 2px;
+  min-height:20px;
+  min-width:20px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  body {
+    min-width: var(--min-width);
+    max-width: calc(var(--min-width) * 3);
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: var(--header-height) auto var(--header-height);
+    color: var(--text);
+    background-color: var(--background);
+  }  
+
+  :root {
+    --large-padding: 1rem;
+    --text:black;
+    --background:rgba(160, 201, 214, 1.0);
+    --logo-button:rgba(221, 159, 235, 0.7);
+    --background-fade: rgba(221, 159, 235, 0.3);
+}
+
+  body>header,
+  body>footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    padding: var(--large-padding);
+  }
