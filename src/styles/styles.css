@@ -24,7 +24,6 @@ article {
   html,
   body {
     height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
   }
 
   body {
@@ -43,6 +42,10 @@ article {
     --background:rgba(160, 201, 214, 1.0);
     --logo-button:rgba(221, 159, 235, 0.7);
     --background-fade: rgba(221, 159, 235, 0.3);
+    --foreground-fade: rgba(255,255,255,0.3);
+    --accent-text: black;
+    --button: gray;
+    --small-padding: calc(var(--large-padding) / 2);
 }
 
   body>header,
@@ -53,3 +56,49 @@ article {
     flex-shrink: 0;
     padding: var(--large-padding);
   }
+
+  a,
+a:hover,
+a:visited {
+  color: var(--text);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+section.hero {
+    min-height: var(--hero-height);
+    padding: var(--large-padding);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-end;
+    color: var(--accent-text);
+    position:relative;
+  }
+  
+  section.hero > * {
+    background-color: var(--foreground-fade);
+    padding: var(--large-padding);
+    min-width: calc(
+      var(--min-width) - 4 * var(--large-padding)
+    ); /* 30rem - 2x( 1rem main padding + 1rem   section padding )*/
+  }
+
+  section.hero::before {
+    content: "";
+    z-index: -1;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: var(--hero-splash-image);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+ 
