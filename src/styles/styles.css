@@ -1,104 +1,52 @@
-body{
-    background-color:gainsboro
+.header {
+  background-image: url("https://images.unsplash.com/photo-1607457561901-e6ec3a6d16cf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGlnaHQlMjBwaW5rJTIwcGF0dGVybnxlbnwwfHwwfHx8MA%3D%3D");
+  text-align: center;
+  padding: 20px;
 }
 
-header,
-main,
-aside,
-footer,
-section,
-article {
-  border: 1px solid black;
-  padding: 2px;
-  margin: 2px;
-  min-height:20px;
-  min-width:20px;
+/* The navbar container */
+.topnav {
+  overflow: hidden;
+  background-color: pink;
 }
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  html,
-  body {
-    height: 100vh;
-  }
-
-  body {
-    min-width: var(--min-width);
-    max-width: calc(var(--min-width) * 3);
-    margin: 0 auto;
-    display: grid;
-    grid-template-rows: var(--header-height) auto var(--header-height);
-    color: var(--text);
-    background-color: var(--background);
-  }  
-
-  :root {
-    --large-padding: 1rem;
-    --text:black;
-    --background:rgba(160, 201, 214, 1.0);
-    --logo-button:rgba(221, 159, 235, 0.7);
-    --background-fade: rgba(221, 159, 235, 0.3);
-    --foreground-fade: rgba(255,255,255,0.3);
-    --accent-text: black;
-    --button: gray;
-    --small-padding: calc(var(--large-padding) / 2);
-}
-
-  body>header,
-  body>footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-shrink: 0;
-    padding: var(--large-padding);
-  }
-
-  a,
-a:hover,
-a:visited {
-  color: var(--text);
+/* Navbar links */
+.topnav a {
+  float: left;
+  display: block;
+  color: Black;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
+  font-weight: bold;
 }
 
-a:hover {
-  text-decoration: underline;
+/* Links - change color on hover */
+.topnav a:hover {
+  background-color: magenta;
+  color: black;
 }
 
-section.hero {
-    min-height: var(--hero-height);
-    padding: var(--large-padding);
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: flex-end;
-    color: var(--accent-text);
-    position:relative;
-  }
-  
-  section.hero > * {
-    background-color: var(--foreground-fade);
-    padding: var(--large-padding);
-    min-width: calc(
-      var(--min-width) - 4 * var(--large-padding)
-    ); /* 30rem - 2x( 1rem main padding + 1rem   section padding )*/
-  }
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 20.33%;
+  padding: 15px;
+}
 
-  section.hero::before {
-    content: "";
-    z-index: -1;
-    position:absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-image: var(--hero-splash-image);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
 
- 
+#Header-2{
+  background-color: MistyRose;
+  text-align: left;
+  padding: 20px;
+}
+
+#Header-3{
+  background-color: mistyrose;
+  text-align: left;
+  padding: 20px;
+  float: left;
+  clear: left;
+}
+
+
