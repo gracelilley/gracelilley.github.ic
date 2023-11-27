@@ -29,11 +29,13 @@
 
 /* Create three equal columns that floats next to each other */
 .column {
-  float: left;
-  width: 20.33%;
-  padding: 15px;
+  
 }
 
+.person {
+  display: flex;
+  flex-direction: row;
+}
 
 #Header-2{
   background-color: MistyRose;
@@ -41,12 +43,89 @@
   padding: 20px;
 }
 
-#Header-3{
-  background-color: mistyrose;
-  text-align: left;
-  padding: 20px;
-  float: left;
-  clear: left;
-}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 
 
+  .flex-column-shop {
+    display:flex;
+    flex-direction: row;
+    padding: 15px;
+    background-color: #f1f1f1;
+  }
+
+  .shop-images{
+    object-fit: cover; 
+    width: 200px;
+    height: 200px;
+  }
+    
+  .button {
+    background-color: lightpink;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 200px;
+  }
+
+
+
+  #Header-2{
+    background-color: MistyRose;
+    text-align: left;
+    padding: 20px;
+  }
+  
+  .flex-container {
+    display: flex;
+    height: 400px;
+    margin: 10px;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+  }
+  
+  #titlebox {
+    width: 425px;
+    height: 345px;
+    background-color: lightcyan;
+    font-size: 30px;
+    padding: 5px;
+  }
+  
+  #main-image {
+    width:450px;
+    height:350px ;
+  }
+  
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:350px;
+  }
+  
+  #trix{
+    width: 100%;
+    height: 100%;
+  }
+  
+  #title {
+    align: left;
+    font-style: underline;
+    font-size: 30px;
+  }
+  
+  #text {
+    font-size: 15px;
+    font:
+  }
+  
+  
+  .trix-images {
+      width:  200px;
+      height: 110px;
+      object-fit: cover;
+      padding: 5px;
+  }
