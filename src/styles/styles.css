@@ -51,28 +51,28 @@
 
 /* Shop CSS */
 
-  .flex-column-shop {
-    display:flex;
-    flex-direction: row;
-    background-color: #f1f1f1;
-    width: 100%;
-  }
+.flex-column-shop {
+  display:flex;
+  flex-direction: row;
+  padding: 15px;
+  background-color: #f1f1f1;
+}
 
-  .shop-images{
-    object-fit: cover; 
-    width: 150px;
-    height: 150px;
-  }
-    
-  .button {
-    background-color: lightpink;
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    width: 150px;
-  }
+.shop-images{
+  object-fit: cover; 
+  width: 200px;
+  height: 200px;
+}
+
+.button {
+  background-color: lightpink;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 200px;
+}
 
   .flex-container {
     display: flex;
